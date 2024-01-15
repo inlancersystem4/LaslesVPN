@@ -18,7 +18,7 @@
     <header role="banner">
 
 
-        <nav class="flex items-center justify-between custom-container py-5">
+        <nav class="flex items-center justify-between custom-container py-5 flex-wrap">
 
             <a href="#" class="flex items-center gap-2.5">
 
@@ -33,42 +33,69 @@
             </a>
 
 
-            <ul class="flex items-center gap-x-8 max-[990px]:hidden">
+            <div class="hidden max-[990px]:block">
 
-                <li>
+                <button class="w-10 h-8 flex items-center justify-center" onclick="showMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3.75 12H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3.75 6H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3.75 18H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+            </div>
+
+
+            <ul class="flex items-center max-[990px]:items-start gap-x-8 max-[990px]:w-full max-[990px]:mt-4  max-[990px]:flex-col max-[990px]:hidden"
+                id="responsive_menu">
+
+                <li class="max-[990px]:py-1 max-[990px]:block max-[990px]:w-full">
 
                     <a href="#"
                         class="text-section_sub-title text-theme_color3 font-normal  px-3 py-1.5 rounded-md hover:bg-theme_color1 hover:bg-opacity-25 focus:bg-theme_color1 focus:bg-opacity-25">About</a>
 
                 </li>
 
-                <li>
+                <li class="max-[990px]:py-1 max-[990px]:block max-[990px]:w-full">
 
                     <a href="#"
                         class="text-section_sub-title text-theme_color3 font-normal  px-3 py-1.5 rounded-md hover:bg-theme_color1 hover:bg-opacity-25 focus:bg-theme_color1 focus:bg-opacity-25">Features</a>
 
                 </li>
 
-                <li>
+                <li class="max-[990px]:py-1 max-[990px]:block max-[990px]:w-full">
 
                     <a href="#"
                         class="text-section_sub-title text-theme_color3 font-normal  px-3 py-1.5 rounded-md hover:bg-theme_color1 hover:bg-opacity-25 focus:bg-theme_color1 focus:bg-opacity-25">Pricing</a>
 
                 </li>
 
-                <li>
+                <li class="max-[990px]:py-1 max-[990px]:block max-[990px]:w-full">
 
                     <a href="#"
                         class="text-section_sub-title text-theme_color3 font-normal  px-3 py-1.5 rounded-md hover:bg-theme_color1 hover:bg-opacity-25 focus:bg-theme_color1 focus:bg-opacity-25">Testimonials</a>
 
                 </li>
 
-                <li>
+                <li class="max-[990px]:py-1 max-[990px]:block max-[990px]:w-full">
 
                     <a href="#"
                         class="text-section_sub-title text-theme_color3 font-normal  px-3 py-1.5 rounded-md hover:bg-theme_color1 hover:bg-opacity-25 focus:bg-theme_color1 focus:bg-opacity-25">Help</a>
 
                 </li>
+
+                <div class="hidden items-center gap-x-7 max-[990px]:flex w-full">
+                    <button
+                        class="text-section_sub-title font-medium text-theme_color1 border border-solid rounded-full border-theme_color1 w-1/2 px-11 py-1.5 hover:bg-theme_color1 hover:text-theme_color5 focus:bg-theme_color1 focus:text-theme_color5 transition-all">Sign
+                        In</button>
+                    <button
+                        class="text-section_sub-title font-medium text-theme_color1 border border-solid rounded-full border-theme_color1 w-1/2 px-11 py-1.5 hover:bg-theme_color1 hover:text-theme_color5 focus:bg-theme_color1 focus:text-theme_color5 transition-all">Sign
+                        Up</button>
+
+                </div>
 
             </ul>
 
@@ -83,20 +110,7 @@
 
             </div>
 
-            <div class="hidden max-[990px]:block">
 
-                <button class="w-10 h-8 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M3.75 12H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.75 6H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.75 18H20.25" stroke="#F53838" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-
-            </div>
 
         </nav>
 
@@ -260,7 +274,7 @@
 
         <div class="custom-container">
 
-            <div class="py-14 md:grid md:grid-cols-3 flex items-stretch lg:gap-x-12 gap-x-5 overflow-x-auto">
+            <div class="py-14 grid md:grid-cols-2 lg:grid-cols-3  lg:gap-x-12 gap-5">
 
                 <div
                     class="w-full flex flex-col justify-between md:h-full h-auto items-center pt-16 pb-12 rounded-lg border-2 border-solid border-[#DDD] bg-theme_color5 min-w-[260px] max-[440px]:min-w-[280px] md:min-w-none">
@@ -360,7 +374,7 @@
                 </div>
 
                 <div
-                    class="w-full flex flex-col justify-between md:h-full h-auto items-center pt-16 pb-12 rounded-lg border-2 border-solid border-theme_color1 bg-theme_color5 min-w-[260px] max-[440px]:min-w-[280px] md:min-w-none">
+                    class="w-full flex flex-col md:col-span-2 lg:col-auto justify-between md:h-full h-auto items-center pt-16 pb-12 rounded-lg border-2 border-solid border-theme_color1 bg-theme_color5 min-w-[260px] max-[440px]:min-w-[280px] md:min-w-none">
 
                     <div class="space-y-7">
 
@@ -468,9 +482,9 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="w-full border-2 border-solid border-[#DDD] rounded-lg p-6">
+                        <div class="w-full h-full border-2 border-solid border-[#DDD] rounded-lg sm:p-6 p-4">
 
-                            <div class="flex items-center justify-between w-full mb-2.5">
+                            <div class="flex items-center justify-between w-full mb-2.5 flex-wrap gap-2">
 
                                 <div class="flex items-center gap-5">
 
@@ -506,9 +520,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="w-full border-2 border-solid border-[#DDD] rounded-lg p-6">
+                        <div class="w-full h-full border-2 border-solid border-[#DDD] rounded-lg sm:p-6 p-4">
 
-                            <div class="flex items-center justify-between w-full mb-2.5">
+                            <div class="flex items-center justify-between w-full mb-2.5 flex-wrap gap-2">
 
                                 <div class="flex items-center gap-5">
 
@@ -545,9 +559,9 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="w-full border-2 border-solid border-[#DDD] rounded-lg p-6">
+                        <div class="w-full h-full border-2 border-solid border-[#DDD] rounded-lg sm:p-6 p-4">
 
-                            <div class="flex items-center justify-between w-full mb-2.5">
+                            <div class="flex items-center justify-between w-full mb-2.5 flex-wrap gap-2">
 
                                 <div class="flex items-center gap-5">
 
@@ -885,6 +899,12 @@
 
 
     <script>
+
+        function showMenu() {
+            var responsiveMenu = document.getElementById('responsive_menu');
+            responsiveMenu.classList.toggle('max-[990px]:hidden');
+        }
+
         const swiper = new Swiper('.swiper', {
             slidesPerView: 1.2,
             spaceBetween: 20,

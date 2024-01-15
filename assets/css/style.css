@@ -47,6 +47,10 @@
       vertical-align: middle;
   }
 
+  .swiper-slide{
+    height: auto;
+  }
+
   .swiper-pagination {
       position: static;
   }
