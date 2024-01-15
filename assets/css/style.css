@@ -103,3 +103,20 @@
           padding-right: 16px;
       }
   }
+
+  @media (max-width:440px) {
+      .custom-container {
+          padding-left: 12px;
+          padding-right: 12px;
+      }
+
+      .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+      }
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          width: 28px;
+          height: 12px;
+      }
+  }
