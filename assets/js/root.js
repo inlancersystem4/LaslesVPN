@@ -15,12 +15,10 @@ tailwind.config = {
             fontSize: {
                 'section_title': ['35px', {
                     lineHeight: '50px',
-                    // letterSpacing: '-0.01em',
                     fontWeight: '500',
                 }],
                 'section_sub-title': ['16px', {
                     lineHeight: '30px',
-                    // letterSpacing: '-0.01em',
                     fontWeight: '400',
                 }],
             },
